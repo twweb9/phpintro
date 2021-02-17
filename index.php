@@ -1,19 +1,20 @@
-<?php
+<!DOCTYPE html>
+<html>
+ 
+<head>
+<meta charset= "utf-8">
+<meta name = "author" content ="Twweb">
+<meta name = "description" content ="Formulario de cadastro Inicial">
+</head>
 
-$category = [];
-$category[] = 'Infantil';
-$category[] = 'Juvenil';
-$category[] = 'Amador';
+<body>
+<p> FORMULARIO DE CADASTRO INICIAL </p>
 
-$nome = 'Tel';
-$idade = 12;
+<form action="script.php" method="post">
+    <p>Nome: <input type="text" name="nome" /></p>
+    <p>Idade: <input type="text" name="idade" /></p>
+    <p><input type="submit" /></p>
+</form>
 
-if($idade <= 12){
-    echo 'Infantil';
-}else if($idade >= 13 && $idade <= 18){
-    echo 'Juvenil';
-}else {
-    echo 'Amador';
-}
-
-?>
+</body>
+</html>
