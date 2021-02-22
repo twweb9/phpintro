@@ -12,6 +12,7 @@
 
 <form action="script.php" method="post">
     <p>Nome: <input type="text" name="nome" /></p>
+    <p>Sobrenome: <input type="text" name="sobrenome" /></p>
     <p>Idade: <input type="text" name="idade" /></p>
     <p><input type="submit" /></p>
 </form>
