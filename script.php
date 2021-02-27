@@ -1,5 +1,7 @@
 <?php
 
+session_start();
+
 $category = [];
 $category[] = 'Infantil';
 $category[] = 'Juvenil';
@@ -10,7 +12,7 @@ $sobrenome = $_POST['sobrenome'];
 $idade = $_POST['idade'];
 
 if(empty($nome) && empty($sobrenome)){
-    echo 'Nome não pode estar vazio';
+    $_SESSION['mensagemerro'] = 'Nome não pode estar vazio';
     return
 }
 if(strlen($nome)< 3 && strlen($sobrenome)< 3){

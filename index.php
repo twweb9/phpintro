@@ -1,3 +1,7 @@
+<?php
+    session_start();
+?>
+
 <!DOCTYPE html>
 <html>
  
@@ -11,6 +15,10 @@
 <p> FORMULARIO DE CADASTRO INICIAL </p>
 
 <form action="script.php" method="post">
+    <?php 
+        $msgerro = isset($_SESSION['mensagemerro']) 
+    ?> 
+
     <p>Nome: <input type="text" name="nome" /></p>
     <p>Sobrenome: <input type="text" name="sobrenome" /></p>
     <p>Idade: <input type="text" name="idade" /></p>
